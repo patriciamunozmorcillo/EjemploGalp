@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+	integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+	crossorigin="anonymous">
+
+<link rel="stylesheet" href="css/estilo.css">
+
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/miscript.js"></script>
+
+
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+<header>
+	<div class="row">
+		<div class="col-md-7">
+			<h1>Bienvenido su gasolinera Galp</h1>
+		</div>
+		<div class="col-md-5">
+			<img alt="logo Galp" src="http://preciogas.com/sites/all/themes/images/galp200_renovado.png" height="120px">
+		</div>
+	</div>
+</header>
+<br><br><br>	
+<main>
+	<div class="row">
+		<div class="col-md-6">
+			<button id="botontarjeta" type="button" class="btn btn-success btn-lg btn-block">Pagar con tarjeta</button>
+			<br><br>
+			
+			<!-- Formulario de tarjeta -->
+			
+			
+			<div id="formulario tarjeta">
+				<form id="formutarjeta" action="Validar" method="post">
+				Seleccione importe <select multiple)>
+					<option value="5">5 Euros</option>
+					<option value="10">10 Euros</option>
+					<option value="20">20 Euros</option>
+					<option value="30">30 Euros</option>
+					<option value="50">50 Euros</option>
+					<option value="Lleno">Llenar depósito</option>
+				</select>
+				<br><br>
+				Inserte número de tarjeta <input name="numero" type="text" value="Número de tarjeta" placeholder>
+				<br><br>
+				Contraseña <input name="contrasena" type="password">
+				<br><br>
+				<input name="enviar" type="submit" value="Continuar"></button>
+				</form>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<button id="bontonefectivo" type="button" class="btn btn-success btn-lg btn-block"> Pagar en efectivo </button>
+			<br><br>
+			
+			
+			<!-- Formulario de efectivo-->
+			
+			
+			<div id="formulario efectivo">
+				<form id="formuefectivo" action="Validar" method="post">
+				Seleccione importe <select multiple)>
+					<option value="5">5 Euros</option>
+					<option value="10">10 Euros</option>
+					<option value="20">20 Euros</option>
+					<option value="30">30 Euros</option>
+					<option value="50">50 Euros</option>
+				</select>
+				<br><br>
+				<h5>Introduzca el importe, por favor</h5>
+				<br><br>
+				<input name="enviar" type="submit" value="Continuar" ></button>
+			</form>
+
+			</div>
+		</div>
+	</div>
+</main>
+
+
+
+
+
+</body>
+</html>
